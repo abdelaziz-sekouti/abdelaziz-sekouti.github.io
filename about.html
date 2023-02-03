@@ -16,7 +16,27 @@
 	font-size: 1.5rem;
 	color: #000!important;
 	}
-	li:hover{
+	nav li a{
+	position:relative;
+	z-index:10px;
+	}
+	nav li{
+	position:relative;
+	}
+	nav li:before{
+	content:'';
+	width: 0%;
+	height:100%;
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+	border-bottom:2px solid #fff;
+	transition:all .7s ease-in-out;
+	}
+	nav li:hover::before{
+	width: 100%;
+	}
+	.footer-1 ul li:hover{
 	font-size: 1.1rem;
 	color: #fff!important;
 	}
@@ -28,6 +48,73 @@
 			transform:rotate(45deg);
 		}
 	
+	
+	/* 320px — 480px: Mobile devices. 481px — 768px: iPads, Tablets. 769px — 1024px: Small screens, laptops. 1025px — 1200px: Desktops, large screens. */
+	* {
+	transition:all .4s ease-in-out;
+	//box-shadow:0 0 12px #ccc;
+	}
+	* i:hover{
+	font-size: 1.5rem;
+	color: #000!important;
+	}
+	li:hover{
+	font-size: 1.1rem;
+	color: #fff!important;
+	}
+	.footer-1  ,
+	.footer-2 {
+	width: 100%;
+	}
+	.footer-1{
+	flex-wrap:wrap;
+	}
+	.media .card,.mediafile img,
+	.footer-1 ul ,
+	.footer-2 ul {
+	box-shadow:0 0 20px 3px  #000;
+	width: 30vw;
+	}
+	.mediafile img{
+	width: 30vw;
+	}
+	.media .card:hover,.mediafile img:hover,
+	.footer-1 ul:hover  {
+	transform:scale(1.1);
+	background-color: #848ac9;
+	color: #ccc;
+	z-index:1000;
+	box-shadow:0 0 20px 3px  #b2e3eb;
+	}
+	.card-img-top:before{
+		padding: 40px 0 0px 50px;
+    		margin: auto;
+    		font-size: 4rem;
+		}
+		nav > a > img{
+			transition:all .4s ease-in-out;
+			border-radius:30px;
+		}
+		nav > a > img:hover{
+			transform:rotate(45deg);
+		}
+		
+	@media(max-width:768px){
+	.card {
+	width: 100vw!important;
+	}
+	.footer-1{
+	flex-direction:column;
+	}
+	.footer-1 div{
+	width: 100% ;
+	}
+	.footer-1 div ul{
+	
+	width: 100%;
+	}
+	
+	}
 	</style>
   </head>
 
