@@ -14,7 +14,7 @@
 		text-decoration:none;
 		
 	}
-	* .bi:hover{
+	* i:hover{
 	transform: scale(5);
 	color: #000!important;
 	}
