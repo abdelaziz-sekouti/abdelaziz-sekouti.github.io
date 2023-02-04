@@ -1,7 +1,7 @@
 /* media queries  */
 	/* 320px — 480px: Mobile devices. 481px — 768px: iPads, Tablets. 769px — 1024px: Small screens, laptops. 1025px — 1200px: Desktops, large screens. */
 	* {
-	transition:all .4s ease-in-out;
+	transition:all .3s ease-in-out;
 	//box-shadow:0 0 12px #ccc;
 	text-transform:capitalize;
 	list-style:none;
@@ -14,8 +14,8 @@
 		text-decoration:none;
 		
 	}
-	* i:hover{
-	font-size: 1.5rem;
+	* .bi:hover{
+	transform: scale(5);
 	color: #000!important;
 	}
 	nav li a{
@@ -65,7 +65,8 @@
 	.mediafile img{
 	width: 30vw;
 	}
-	.media .card:hover,.mediafile img:hover,
+	.media .card:hover,
+	.mediafile img:hover,
 	.footer-1 ul:hover  {
 	transform:scale(1.1);
 	background-color: #848ac9; 
@@ -103,7 +104,8 @@
 	width: 100%;
 	}
 	
-	.media .card:hover,.mediafile img:hover,
+	.media .card:hover,
+	.mediafile img:hover,
 	.footer-1 ul:hover  {
 	transform:scale(1);
 	background-color: #848ac9;
