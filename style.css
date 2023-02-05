@@ -86,12 +86,15 @@
 	.footer-1 ul:hover  {
 			background-color: transparent;
 	}
+	.footer-2 p:hover  {
+			color: #fff;
+	}
 	.card-img-top:before{
 			padding: 40px 0 0px 50px;
     		margin: auto;
     		font-size: 4rem;
 		}
-	
+	/*RESPONSIVE*/
 	@media(max-width:768px){
 	.card {
 			width: 100vw!important;
