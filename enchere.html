@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site d'enchères</title>
+  <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-secondary text-light">
+      <a class="navbar-brand" href="#">Mon site web</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#accueil">Accueil</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Enchères
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#enchere-en-course">
+                Enchères en cours
+              </a>
+              <a class="dropdown-item" href="#enchere-terminee">
+                Enchères terminées
+              </a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#temoignages">Témoignages</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#comment-ca-marche">Comment ça marche</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#inscription">Inscription</a>
+</li>
+</ul>
+</div>
+</nav>
+<!-- Accueil -->
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Bienvenue sur notre site d'enchères</h1>
+    <p class="lead">Rejoignez notre communauté et participez à nos enchères en ligne</p>
+    <a href="#enchères" class="btn btn-primary">Voir les enchères en cours</a>
+  </div>
+</div>
+<!-- Enchères -->
+<div class="container my-5" id="enchères">
+  <h2 id="enchere-en-course">Enchères en cours</h2>
+  <p>Liste des enchères en cours avec les détails des produits et le temps restant</p>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Produit</th>
+        <th>Prix de départ</th>
+        <th>Temps restant</th>
+        <th>Enchérir</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Produit 1</td>
+        <td>100€</td>
+        <td>2 jours</td>
+        <td><a href="#" class="btn btn-primary">Enchérir</a></td>
+      </tr>
+      <tr>
+        <td>Produit 2</td>
+        <td>200€</td>
+        <td>5 heures</td>
+        <td><a href="#" class="btn btn-primary">Enchérir</a></td>
+      </tr>
+      <tr>
+        <td>Produit 3</td>
+        <td>300€</td>
+        <td>1 jour</td>
+        <td><a href="#" class="btn btn-primary">Enchérir</a></td>
+      </tr>
+    </tbody>
+  </table>
+  <hr>
+  <h2 id="enchere-terminee">Enchères terminées</h2>
+  <p>Liste des enchères terminées avec les gagnants et les prix payés</p>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Produit</th>
+        <th>Gagnant</th>
+        <th>Prix payé</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Produit 1</td>
+        <td>Utilisateur A</td>
+<td>110€</td>
+</tr>
+<tr>
+<td>Produit 2</td>
+<td>Utilisateur B</td>
+<td>220€</td>
+</tr>
+<tr>
+<td>Produit 3</td>
+<td>Utilisateur C</td>
+<td>310€</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Témoignages -->
+<div class="container my-5" id="temoignages">
+  <h2>Témoignages</h2>
+  <p>Lisez ce que nos utilisateurs ont à dire à propos de notre site d'enchères</p>
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Utilisateur A</h5>
+          <p class="card-text">J'ai gagné plusieurs enchères sur ce site et je suis très satisfait de l'expérience utilisateur.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Utilisateur B</h5>
+          <p class="card-text">Les enchères sont toujours très animées et les produits sont de bonne qualité.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Utilisateur C</h5>
+          <p class="card-text">Le site est facile à utiliser et j'ai réussi à obtenir un bon prix pour le produit que je voulais.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Comment ça marche -->
+<div class="container my-5" id="commentcamarche">
+  <h2 id="comment-ca-marche">Comment ça marche</h2>
+  <p>Notre site d'enchères fonctionne de la manière suivante :</p>
+  <ul>
+    <li>Inscrivez-vous pour devenir membre</li>
+    <li>Participez à nos enchères en ligne</li>
+    <li>Le temps d'enchère est limité et le prix augmente à chaque enchère</li>
+    <li>Le membre ayant enchéri le plus gagne l'enchère</li>
+  </ul>
+  <button
+  id="buyButton"
+  data-code="your_checkout_code"
+  data-description="Description of your product or service"
+  data-amount="10.00"
+  data-currency="USD"
+  class="btn btn-success"
+>
+  Buy with Coinbase
+</button>
+
+</div>
+<!-- Inscription -->
+<div class="container my-5" id="inscription">
+  
+    <h1 class="text-center">Inscription</h1>
+    <p>
+      Inscrivez-vous pour participer à nos enchères et ne manquez jamais
+      une occasion.
+    </p>
+</div>
+<!-- start footer -->
+<footer class="py-3  bg-secondary text-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-6">
+        <h5>Enchères</h5>
+        <ul class="list-unstyled">
+          <li><a class=" text-dark" href="#accueil">Accueil</a></li>
+          <li><a class=" text-dark" href="#enchere-en-course">Enchères en cours</a></li>
+          <li><a class=" text-dark" href="#enchere-terminee">Enchères terminées</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-6">
+        <h5>Informations</h5>
+        <ul class="list-unstyled">
+          <li><a  class=" text-dark"href="#temoignages">Témoignages</a></li>
+          <li><a  class=" text-dark"href="#comment-ca-marche">Comment ça marche</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-12">
+        <h5>Suivez-nous</h5>
+        <ul class="list-inline">
+          <li class="list-inline-item ">
+            <a href="#">
+              <i class="fab fa-facebook-f text-dark"></i>
+            </a>
+          </li>
+          <li class="list-inline-item ">
+            <a href="#">
+              <i class="fab fa-twitter text-dark"></i>
+            </a>
+          </li>
+          <li class="list-inline-item ">
+            <a href="#">
+              <i class="fab fa-instagram text-dark"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-12">
+        <h5>Contactez-nous</h5>
+        <ul class="list-unstyled">
+          <li class=" text-dark">Adresse : 123 Main Street, Anytown USA</li>
+          <li class=" text-dark">Téléphone : (555) 555-5555</li>
+          <li class=" text-dark">Email : contact@monenchèresite.com</li>
+        </ul>
+      </div>
+    </div>
+    <p class="text-center mt-3">
+      &copy; 2023 Mon site web pour enchères | Tous droits réservés
+    </p>
+  </div>
+</footer>
+
+<!-- end footer -->
+<script
+  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+crossorigin="anonymous"
+></script>
+<script src="https://commerce.coinbase.com/v1/checkout.js"></script>
+
+
+<script>
+  var button = document.querySelector("#buyButton");
+  button.addEventListener("click", function(event) {
+    event.preventDefault();
+    var checkout = new Coinbase.Checkout({
+      name: "Your business name",
+      description: button.getAttribute("data-description"),
+      amount: button.getAttribute("data-amount"),
+      currency: button.getAttribute("data-currency"),
+      code: button.getAttribute("data-code")
+    });
+    checkout.show();
+  });
+</script>
+
+  </body>
+</html>
+
+
