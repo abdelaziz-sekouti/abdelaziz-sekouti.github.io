@@ -44,6 +44,36 @@
 	.parallax button{
 	width: auto;
 	}
+	form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  margin-bottom: 0.5rem;
+}
+
+input[type="email"] {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  width: 100%;
+  max-width: 20rem;
+  box-sizing: border-box;
+}
+
+button[type="submit"] {
+  padding: 0.5rem 1rem;
+  background-color: #4285F4;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
 	</style>
 </head>
 <body>
@@ -240,6 +270,13 @@
       Inscrivez-vous pour participer à nos enchères et ne manquez jamais
       une occasion.
     </p>
+	<form action="subscribe.php" method="post">
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
+  <button type="submit">Subscribe</button>
+</form>
+
+	
 </div>
 <!-- start footer -->
 <footer class="bg-primary text-light pt-2 pb-0 mb-0">
@@ -328,6 +365,39 @@ crossorigin="anonymous"
     });
     checkout.show();
   });
+	const form = document.querySelector('form');
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault(); // Prevent the form from submitting
+
+  const email = form.email.value;
+
+  // Validate the email address
+  if (!isValidEmail(email)) {
+    alert('Invalid email address.');
+    return;
+  }
+
+  // Submit the form using AJAX
+  const xhr = new XMLHttpRequest();
+  xhr.open('POST', 'subscribe.php');
+  xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+  xhr.onload = () => {
+    if (xhr.status === 200) {
+      form.reset();
+      alert('Thank you for subscribing!');
+    } else {
+      alert('Error: ' + xhr.statusText);
+    }
+  };
+  xhr.send('email=' + encodeURIComponent(email));
+});
+
+function isValidEmail(email) {
+  const pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return pattern.test(email);
+}
+
 </script>
 
   </body>
