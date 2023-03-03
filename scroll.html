@@ -83,10 +83,10 @@
 		padding:  0;
 		}
 	nav .logo a:hover:before{
-	    width:0!important;
+	    	width:0!important;
 	}
 	nav .logo svg{
-	    scale:3;
+	    	scale:3;
 	}
 	nav ul{
 		display:flex;
@@ -116,7 +116,7 @@
 		color: #F70;
 	}
 	.heroe .container h1,.heroe .container p {
-		/* color: #c00; */
+		
 		font-size: 4rem;
 		text-align: center;
 	}
@@ -124,54 +124,10 @@
 		font-size: 2rem;
 		color: #c0c;
 	}
-	
-	
-/* 	
-	
+
 	.heroe .container h1 {
-		-webkit-text-stroke:2px #00f;
-		background-image:fit-content;
-		background-color: #f00;
-		animation: anime 7s linear infinite;
-		position:relative;
-		z-index:100; 
-
-	}
-	.heroe .container h1::before {
-		content:'';
-		position:absolute; 
-		top: 0;
-		left: 0;
-		width: 0%;
-		height: 100%;
-		-webkit-text-stroke:2px blue;
-		overflow:hidden;
-		animation: anime 7s linear infinite; 
-		z-index:1; 
-
-	}
-	@keyframes anime{
-		0%,10%,100%{
-			width: 0%;
-			
-		}
-		70%,90%{
-			width: 100%;
-			
-		}
-		
-	}
-	
-	
-	
-	
-	 */
-	 
-	 
-	 		.heroe .container h1 {
 		-webkit-text-stroke:2px #F70;
 		position:relative;
-		/* z-index:100;  */
 		color:#000;
 		text-transform: uppercase;
 
@@ -183,14 +139,11 @@
 		left: 0;
 		border-right:7px solid #0f0; 
 		width: 0%;
-		/* background-image:fit-content; */
 		height: 100%;
-		/* background-color: #f00; */
 		-webkit-text-stroke:0px #f70;
 		overflow:hidden;
 		color:#0f0;
 		animation: anime 6s linear infinite; 
-
 	}
 	@keyframes anime{
 		0%,10%,100%{
@@ -264,7 +217,7 @@
 	}
 	.galery-parent .cards p,.galery-parent .cards h2{
 		text-align: center;
-		/* color: #000; */
+		
 	}
 	.parag {
 		display:flex;
@@ -287,9 +240,7 @@
 		border-radius:20px;
 		text-align: justify;
 	}
-	
-	
-	
+
 	.footer{
 		display:flex;
 		justify-content:center;
@@ -330,70 +281,6 @@
 **************************************************************************************************************************************************************************************
 
 	*/
-	
-	
-	
-	
-	@media (max-width:768px){
-	#icon1{
-		display:block;
-	}
-	.heroe{
-		display:none;
-	}
-	nav{
-	/* background-color: transparent; */
-	}
-	nav ul{
-		height: 50vh;
-	}
-	nav ul{
-		flex-direction:column;
-		padding: 0px;
-		background-color: #000;
-		width: 70%;
-		position:absolute;
-		top: 70px;
-		right: -100%;
-		width:100%;
-		transition:all .3s ease-in-out;
-		justify-content:center;
-		align-items:center;
-	}
-	#icon1 svg{
-		position: absolute;
-		top: 30px;
-		right: 30px;
-		transform: scale(3);
-		color: #CCC;
-		cursor:pointer;
-	  }
-	  
-	.galery-parent {
-		flex-direction:column;
-		transition:all .5s ease-in-out;
-		// min-height:calc(100vh-300px);
-		padding: 0px;
-	}
-	.galery-parent .cards{
-		min-width:75%;
-	}
-	  .footer{
-		flex-direction:column;
-		padding: 0px;
-	}
-	.info{
-	width: 100%;
-	}
-	.info ul{
-	width: 100%;
-	}
-	.info:nth-child(2n+1) {
-    margin: 10px;
-    box-shadow: none;
-}
-	}
-	
 	@media (max-width:480px){
 		.galery-parent {
 		flex-direction:column;
@@ -420,7 +307,66 @@
     margin: 10px;
     box-shadow: none;
 }
+	}	
+		
+		
+	
+	@media (max-width:768px){
+	#icon1{
+		display:block;
 	}
+	.heroe{
+		display:none;
+	}
+	
+	nav ul{
+		flex-direction:column;
+		padding: 0px;
+		background-color: #000;
+		width: 70%;
+		height: 50vh;
+		position:absolute;
+		top: 70px;
+		right: -100%;
+		width:100%;
+		transition:all .3s ease-in-out;
+		justify-content:center;
+		align-items:center;
+	}
+	#icon1 svg{
+		position: absolute;
+		top: 30px;
+		right: 30px;
+		transform: scale(3);
+		color: #CCC;
+		cursor:pointer;
+	  }
+	  
+	.galery-parent {
+		flex-direction:column;
+		transition:all .5s ease-in-out;
+		padding: 0px;
+	}
+	.galery-parent .cards{
+		min-width:75%;
+	}
+	  .footer{
+		flex-direction:column;
+		padding: 0px;
+	}
+	.info{
+	width: 100%;
+	}
+	.info ul{
+	width: 100%;
+	}
+	.info:nth-child(2n+1) {
+    margin: 10px;
+    box-shadow: none;
+}
+	}
+	
+
 	</style>
 </head>
 <body>
