@@ -114,6 +114,7 @@
 	}
 	.heroe .container h1{
 		-webkit-text-stroke :2px red;
+
 	}
 	.heroe .container p {
 		margin-top :100px;
@@ -125,7 +126,7 @@
 		height: 50px;
 		text-align: center;
 		-webkit-text-stroke :2px red   ;
-		color :transparent ;
+		/*color :transparent ;*/
 		font-size: 5rem;
 		cursor:pointer;
 		position :relative ;
@@ -250,13 +251,23 @@
 		margin-bottom: 30px;
 		
 	}
-	/******************************media query*********************
-**************************************************************************************************************************************************************************************
+/*
+*****************************media query*********************
+******************************************************************
+********************************************************************
+************************************************
 	*/
 		@media (max-width:480px){
 	#icon1{
 		display:block;
+		position :relative;
 	}
+
+	nav ul{
+
+		width :100%;
+	}
+
 	.galery-parent {
 		flex-direction:column;
 		transition:all .5s ease-in-out;
@@ -292,19 +303,17 @@
 	@media (max-width:768px){
 	#icon1{
 		display:block;
+		position :relative;
 	}
 	.heroe{
 		display:none;
 	}
-	
-	nav ul{
-		height: 50vh;
-	}
+
 	nav ul{
 		flex-direction:column;
 		padding: 0px;
 		background-color: #000;
-		width: 70%;
+		height:50vh ;
 		position:absolute;
 		top: 70px;
 		right: -100%;
